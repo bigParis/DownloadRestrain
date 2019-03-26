@@ -16,6 +16,8 @@
 		1B86698C2246384000416FC6 /* NSObject+NetworkStateOrRSSI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B86698B2246384000416FC6 /* NSObject+NetworkStateOrRSSI.m */; };
 		1B86698F224683DA00416FC6 /* NSURLSession+Statistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B86698E224683DA00416FC6 /* NSURLSession+Statistics.m */; };
 		1B86699222469DBD00416FC6 /* NSURLSession+test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B86699122469DBD00416FC6 /* NSURLSession+test.m */; };
+		2F8A985B2249E8F800BE821A /* CFHttpMessageURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A98572249E8F700BE821A /* CFHttpMessageURLProtocol.m */; };
+		2F8A985C2249E8F800BE821A /* NSURLRequest+NSURLProtocolExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8A985A2249E8F800BE821A /* NSURLRequest+NSURLProtocolExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		1B86698E224683DA00416FC6 /* NSURLSession+Statistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+Statistics.m"; sourceTree = "<group>"; };
 		1B86699022469DBD00416FC6 /* NSURLSession+test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+test.h"; sourceTree = "<group>"; };
 		1B86699122469DBD00416FC6 /* NSURLSession+test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+test.m"; sourceTree = "<group>"; };
+		2F8A98572249E8F700BE821A /* CFHttpMessageURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFHttpMessageURLProtocol.m; sourceTree = "<group>"; };
+		2F8A98582249E8F700BE821A /* NSURLRequest+NSURLProtocolExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+NSURLProtocolExtension.h"; sourceTree = "<group>"; };
+		2F8A98592249E8F700BE821A /* CFHttpMessageURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFHttpMessageURLProtocol.h; sourceTree = "<group>"; };
+		2F8A985A2249E8F800BE821A /* NSURLRequest+NSURLProtocolExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+NSURLProtocolExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 		1B45F669224604A2000885A4 /* DownloadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2F8A98592249E8F700BE821A /* CFHttpMessageURLProtocol.h */,
+				2F8A98572249E8F700BE821A /* CFHttpMessageURLProtocol.m */,
+				2F8A98582249E8F700BE821A /* NSURLRequest+NSURLProtocolExtension.h */,
+				2F8A985A2249E8F800BE821A /* NSURLRequest+NSURLProtocolExtension.m */,
 				1B86698A2246384000416FC6 /* NSObject+NetworkStateOrRSSI.h */,
 				1B86699022469DBD00416FC6 /* NSURLSession+test.h */,
 				1B86699122469DBD00416FC6 /* NSURLSession+test.m */,
@@ -159,7 +169,9 @@
 				1B86698F224683DA00416FC6 /* NSURLSession+Statistics.m in Sources */,
 				1B86699222469DBD00416FC6 /* NSURLSession+test.m in Sources */,
 				1B86698C2246384000416FC6 /* NSObject+NetworkStateOrRSSI.m in Sources */,
+				2F8A985C2249E8F800BE821A /* NSURLRequest+NSURLProtocolExtension.m in Sources */,
 				1B45F66F224604A2000885A4 /* ViewController.m in Sources */,
+				2F8A985B2249E8F800BE821A /* CFHttpMessageURLProtocol.m in Sources */,
 				1B45F67A224604A4000885A4 /* main.m in Sources */,
 				1B45F66C224604A2000885A4 /* AppDelegate.m in Sources */,
 			);

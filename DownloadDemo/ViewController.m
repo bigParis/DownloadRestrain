@@ -147,10 +147,10 @@ static const int kSleepTime = 5;
 - (NSURLSessionDataTask *)getDataTask
 {
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue currentQueue]];
-    NSURL *url = [NSURL URLWithString:@"http://sznk.fcloud.store.qq.com/store_raw_download?buid=16821&uuid=b4c539a7ae1741cdb9950cbcde77030c&fsname=CourseTeacher_1.2.4.2_DailyBuild.dmg"];
+    NSURL *url = [NSURL URLWithString:@"https://sznk.fcloud.store.qq.com/store_raw_download?buid=16821&uuid=b4c539a7ae1741cdb9950cbcde77030c&fsname=CourseTeacher_1.2.4.2_DailyBuild.dmg"];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:url];
 
-    self.downloadTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(onDownloadTimerTimeout:) userInfo:nil repeats:NO];
+//    self.downloadTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(onDownloadTimerTimeout:) userInfo:nil repeats:NO];
     return dataTask;
 }
 
