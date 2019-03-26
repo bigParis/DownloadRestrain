@@ -291,8 +291,8 @@
         CFHTTPMessageRef message = (CFHTTPMessageRef) CFReadStreamCopyProperty(readStream, kCFStreamPropertyHTTPResponseHeader);
         if (CFHTTPMessageIsHeaderComplete(message)) {
             // 以防response的header信息不完整
-            sleep(1);
-            UInt8 buffer[10 * 1024];
+            sleep(0.75);
+            UInt8 buffer[5 * 1024];
             UInt8 *buf = NULL;
             NSUInteger length = 0;
             NSInputStream *inputstream = (NSInputStream *) aStream;

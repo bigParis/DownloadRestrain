@@ -37,7 +37,7 @@ static const int kSleepTime = 5;
     [super viewDidLoad];
     self.networkManager = [[NSObject alloc] init];
     [self initViews];
-    [NSTimer scheduledTimerWithTimeInterval:1.f target:self selector:@selector(monitorNetworkState) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:.25f target:self selector:@selector(monitorNetworkState) userInfo:nil repeats:YES];
 }
 
 - (void)monitorNetworkState
@@ -102,7 +102,7 @@ static const int kSleepTime = 5;
     self.downloadQueue = downloadQueue;
     for (int i = 0; i < 10; i++) {
         dispatch_sync(downloadQueue, ^{
-            NSLog(@"add dataTask:%@, thread:%@", @(i), [NSThread currentThread]);
+            NSLog(@"add dataTask:%@, thread:%@", @(i+1), [NSThread currentThread]);
             NSURLSessionDataTask *dataTask = [self getDataTask];
             dataTask.taskDescription = [NSString stringWithFormat:@"任务_%@", @(i)];
             [self.taskArray setObject:dataTask forKey:dataTask.taskDescription];
